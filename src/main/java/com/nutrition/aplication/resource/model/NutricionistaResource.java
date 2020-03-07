@@ -7,8 +7,8 @@ public class NutricionistaResource {
 	@JsonProperty("nome_nutricionista")
 	private String nome;
 	
-	@JsonProperty("idade")
-	private String idade;
+	@JsonProperty("nascimento")
+	private String nascimento;
 	
 	@JsonProperty("codigo_registro")
 	private String codigoRegistro;	
@@ -29,12 +29,13 @@ public class NutricionistaResource {
 		this.nome = nome;
 	}
 	
-	public String getIdade() {
-		return idade;
+	public String getNascimento() {
+//		???
+		return nascimento;
 	}
 	
-	public void setIdade(String idade) {
-		this.idade = idade;
+	public void setNascimento(String nascimento) {
+		this.nascimento = nascimento;
 	}
 	
 	public String getIdPaciente() {
@@ -55,7 +56,7 @@ public class NutricionistaResource {
 
 	@Override
 	public String toString() {
-		return "NutricionistaResource [nome=" + nome + ", idade=" + idade + ", codigoRegistro=" + codigoRegistro
+		return "NutricionistaResource [nome=" + nome + ", nascimneto=" + nascimento + ", codigoRegistro=" + codigoRegistro
 				+ ", idPaciente=" + idPaciente + "]";
 	}
 	

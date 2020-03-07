@@ -20,9 +20,9 @@ public class NutricionistaConversor {
 			Long idPaciente = checkIdPaciente(
 					nutricionistaResource.getIdPaciente());
 			
-			LocalDate idade = checkIdade(nutricionistaResource.getIdade());
+			LocalDate nascimento = checkNascimento(nutricionistaResource.getNascimento());
 			nutricionista.setIdPaciente(idPaciente);
-			nutricionista.setIdade(idade);
+			nutricionista.setNascimento(nascimento);
 			nutricionista.setCodigoRegistro(nutricionistaResource.getCodigoRegistro());
 			nutricionista.setNome(nutricionistaResource.getNome());
 			
@@ -38,7 +38,7 @@ public class NutricionistaConversor {
 		return Long.parseLong(idPaciente);
 	}
 	
-	private LocalDate checkIdade(String idade) {
-		return LocalDate.parse(idade);
+	private LocalDate checkNascimento(String nascimneto) {
+		return LocalDate.parse(nascimneto);
 	}
 }

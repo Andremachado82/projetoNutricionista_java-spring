@@ -22,7 +22,7 @@ public class Nutricionista implements Serializable {
 	
 	@Column(name="nome")
 	private String nome;
-	private LocalDate idade;
+	private LocalDate nascimento;
 	
 	@Column(name ="codigo_registro")
 	private String codigoRegistro;
@@ -50,11 +50,11 @@ public class Nutricionista implements Serializable {
 		this.nome = nome;
 	}
 	
-	public LocalDate getIdade() {
-		return idade;
+	public LocalDate getNascimento() {
+		return nascimento;
 	}
-	public void setIdade(LocalDate idade) {
-		this.idade = idade;
+	public void setNascimento(LocalDate nascimento) {
+		this.nascimento = nascimento;
 	}
 	
 //	private LocalDate format(LocalDate idade2) {
